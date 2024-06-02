@@ -1,41 +1,41 @@
 # Tensorflow Chatbot
-Tensorflow Chatbot Demo by @Sirajology on [Youtube](https://youtu.be/SJDEOWLHYVo)
 
-Overview
-============
-This is the full code for 'How to Make an Amazing Tensorflow Chatbot Easily' by @Sirajology on [Youtube](https://youtu.be/SJDEOWLHYVo). In this demo code, we implement Tensorflows [Sequence to Sequence](https://www.tensorflow.org/versions/r0.12/tutorials/seq2seq/index.html) model to train a
-chatbot on the [Cornell Movie Dialogue dataset](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html). After training for a few hours, the bot is able to hold a fun conversation.
+## Overview
+This repository contains the full code for implementing a chatbot using TensorFlow's Sequence to Sequence (Seq2Seq) model. The chatbot is trained on the Cornell Movie Dialogue dataset and is capable of holding engaging conversations after a few hours of training.
 
+## Dependencies
+Ensure the following Python libraries are installed:
 
-Dependencies
-============
-* numpy
-* scipy 
-* six
-* tensorflow (https://www.tensorflow.org/versions/r0.12/get_started/os_setup.html)
+- `numpy`
+- `scipy`
+- `six`
+- `tensorflow`
 
-Use [pip](https://pypi.python.org/pypi/pip) to install any missing dependencies
+Use `pip` to install any missing dependencies:
+```bash
+pip install numpy scipy six tensorflow
+```
 
+## Usage
 
-Usage
-===========
+### Training the Chatbot
+To train the chatbot, modify the `seq2seq.ini` file to set the mode to `train`:
+```ini
+mode = train
+```
+Then, run the training script:
+```bash
+python execute.py
+```
 
-To train the bot, edit the `seq2seq.ini` file so that mode is set to train like so
+### Testing the Chatbot
+To test the chatbot during or after training, modify the `seq2seq.ini` file to set the mode to `test`:
+```ini
+mode = test
+```
+Then, run the testing script:
+```bash
+python execute.py
+```
 
-`mode = train`
-
-then run the code like so
-
-``python execute.py``
-
-To test the bot during or after training, edit the `seq2seq.ini` file so that mode is set to test like so
-
-`mode = test`
-
-then run the code like so
-
-``python execute.py``
-
-
-
-
+By following these steps, you can train and interact with the chatbot to experience its conversational capabilities.
